@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+body .cabecalho{
+    display: -webkit-flex;
+    justify-content: end;
+    align-items: center;
+    height: 4rem;
+    margin-right: 30px;
+}
+
+body .cabecalho a{
+    font-weight: 400;
+    font-size: 13px;
+    font-family: arial,sans-serif;
+    line-height: 24px;
+    margin: 10px;
+    color: #70757a;
+}
+
+body .cabecalho a:hover{
+    text-decoration: underline;
+}
+
+body .cabecalho a:nth-child(3){
+    padding: 1px 12px 1px 12px;
+    color:rgb(255, 255, 255);
+    background: #4386F9;
+    border-radius: 2px;
+    font-weight: bold;
+    font-size: 13px;
+    text-decoration: none;
+    line-height: 28px;
+}
+
+body .cabecalho a:nth-child(3):hover{
+    -webkit-box-shadow: 10px 0.5px 0px 0px #4386F9; 
+    box-shadow: 0px 0.5px 0px 0px #4386F9;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 60vh;
+    width: 100%;
+}
+
+section .Google{
+    display: flex;
+}
+
+section .Google h1{
+    font-family: Arial, sans-serif;
+    font-size: 6em;
+    font-weight: 500;
+    line-height: 180px;
+}
+
+section .Google h1:nth-child(1){
+    color: #4386F9;
+}
+section .Google h1:nth-child(2){
+    color: #EF4239;
+}
+section .Google h1:nth-child(3){
+    color:#FFBD08;
+}
+section .Google h1:nth-child(4){
+    color: #4386F9;
+}
+section .Google h1:nth-child(5){
+    color:#31AB52;
+}
+section .Google h1:nth-child(6){
+    color:#EF4239;
+    transform: rotate(-20deg);
+}
+
+section .pesquisa{
+    display: flex;
+    justify-content: center;
+    width: 30rem;
+    border: 1px solid rgba(0,0,0,0.17);
+    border-radius: 50px;
+}
+section .pesquisa input{
+    width: 100%;
+    border-radius: 50px;
+    border: none;
+    font-weight: 400;
+    line-height: 34px;
+    font-size: 16px;
+    position: relative;
+}
+
+section .pesquisa .icon{
+    color:rgba(0,0,0,0.4);
+    font-weight: 600;
+    display: block;
+    padding: 12px;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: #70757a;
+    font-size: 14px;
+    line-height: 40px;
+    background: #F2F2F2;
+}
+
+footer .br{
+    border-top: 1px solid rgba(0,0,0,0.17);
+}
+
+footer .br p{
+    margin-left: 30px;
+}
+
+footer .links{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgba(0,0,0,0.17);
+}
+
+footer .links a{
+    color: #70757a;
+    font-size: 14px;
+}
+
+footer .links a:hover{
+    text-decoration: underline;
+}
+
+footer .links a:first-child{
+    margin-left: 30px;
+}
+
+footer .links a:last-child{
+    margin-right: 30px;
+}
+
+footer .links .esquerda a{
+    margin-left: 30px;
+}
+
+footer .links .direita a{
+    margin-right: 30px;
+}
+
+@media (max-width: 600px){
+    section{
+        justify-content: start;
+    }
+    body .cabecalho{
+        margin-right: 10px;
+    }
+    section .pesquisa{
+        width: 25rem;
+    }
+    section .Google h1{
+        font-size: 4em;
+    }
+    footer .links{
+        display: block;
+        text-align: center;
+    }
+    footer .links a:first-child{
+        margin-left: none;
+    }
+    footer .links a:last-child{
+        margin-right: none;
+    }
+
+}
